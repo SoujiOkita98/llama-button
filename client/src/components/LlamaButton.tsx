@@ -115,21 +115,19 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
           className="z-10 relative"
         />
 
-        {/* Body Main Shape */}
+        {/* Body Main Shape - Rounder and Chubbier */}
         <path
-          d="M60 100 
-             C 55 105, 55 115, 60 120 
-             C 55 125, 55 135, 60 140 
-             C 55 145, 55 155, 60 160 
-             C 55 165, 55 175, 60 180 
-             C 55 185, 55 195, 60 200
-             L 140 200
-             C 145 195, 145 185, 140 180
-             C 145 175, 145 165, 140 160
-             C 145 155, 145 145, 140 140
-             C 145 135, 145 125, 140 120
-             C 145 115, 145 105, 140 100
-             C 130 80, 70 80, 60 100 Z"
+          d="M50 110 
+             C 40 115, 35 125, 35 140
+             C 35 155, 40 165, 50 170
+             C 40 175, 35 185, 35 195
+             C 35 205, 40 210, 50 210
+             L 150 210
+             C 160 210, 165 205, 165 195
+             C 165 185, 160 175, 150 170
+             C 160 165, 165 155, 165 140
+             C 165 125, 160 115, 150 110
+             C 140 85, 60 85, 50 110 Z"
           stroke="var(--color-llama-stroke)"
           strokeWidth="6"
           fill="var(--color-llama-fill)"
@@ -150,7 +148,7 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
       </svg>
 
       {/* Text Overlay */}
-      <div className="absolute inset-0 flex items-center justify-center pt-24 pointer-events-none">
+      <div className="absolute inset-0 flex items-center justify-center pt-20 pointer-events-none">
         <span className="text-3xl font-bold text-[var(--color-llama-stroke)] tracking-wide">
           {text}
         </span>

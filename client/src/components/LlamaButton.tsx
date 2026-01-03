@@ -47,8 +47,8 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
     >
       {/* SVG Container */}
       <svg
-        width="200"
-        height="220"
+        width="220"
+        height="240"
         viewBox="0 0 200 220"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
           style={{ originX: 0.8, originY: 0.9 }} // Pivot point at the base of the ear
         >
           <path
-            d="M60 90 C 50 40, 50 20, 70 20 C 90 20, 90 40, 80 90"
+            d="M55 90 C 45 40, 45 15, 70 15 C 95 15, 95 40, 85 90"
             stroke="var(--color-llama-stroke)"
             strokeWidth="6"
             fill="var(--color-llama-fill)"
@@ -70,7 +70,7 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
             strokeLinejoin="round"
           />
           <path
-            d="M65 80 C 60 50, 60 35, 70 35 C 80 35, 80 50, 75 80"
+            d="M60 80 C 55 50, 55 30, 70 30 C 85 30, 85 50, 80 80"
             stroke="var(--color-llama-stroke)"
             strokeWidth="4"
             fill="none"
@@ -87,7 +87,7 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
           style={{ originX: 0.2, originY: 0.9 }} // Pivot point at the base of the ear
         >
           <path
-            d="M140 90 C 150 40, 150 20, 130 20 C 110 20, 110 40, 120 90"
+            d="M145 90 C 155 40, 155 15, 130 15 C 105 15, 105 40, 115 90"
             stroke="var(--color-llama-stroke)"
             strokeWidth="6"
             fill="var(--color-llama-fill)"
@@ -95,7 +95,7 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
             strokeLinejoin="round"
           />
           <path
-            d="M135 80 C 140 50, 140 35, 130 35 C 120 35, 120 50, 125 80"
+            d="M140 80 C 145 50, 145 30, 130 30 C 115 30, 115 50, 120 80"
             stroke="var(--color-llama-stroke)"
             strokeWidth="4"
             fill="none"
@@ -106,7 +106,7 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
 
         {/* Head Fluff (Top) */}
         <path
-          d="M70 90 C 75 80, 85 80, 90 85 C 95 80, 105 80, 110 85 C 115 80, 125 80, 130 90"
+          d="M65 90 C 70 75, 80 75, 90 80 C 100 75, 110 75, 120 80 C 130 75, 140 75, 135 90"
           stroke="var(--color-llama-stroke)"
           strokeWidth="6"
           fill="var(--color-llama-fill)"
@@ -117,19 +117,19 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
 
         {/* Body Main Shape */}
         <path
-          d="M60 100 
-             C 55 105, 55 115, 60 120 
-             C 55 125, 55 135, 60 140 
-             C 55 145, 55 155, 60 160 
-             C 55 165, 55 175, 60 180 
-             C 55 185, 55 195, 60 200
-             L 140 200
-             C 145 195, 145 185, 140 180
-             C 145 175, 145 165, 140 160
-             C 145 155, 145 145, 140 140
-             C 145 135, 145 125, 140 120
-             C 145 115, 145 105, 140 100
-             C 130 80, 70 80, 60 100 Z"
+          d="M55 100 
+             C 50 105, 50 115, 55 120 
+             C 50 125, 50 135, 55 140 
+             C 50 145, 50 155, 55 160 
+             C 50 165, 50 175, 55 180 
+             C 50 185, 50 195, 55 200
+             L 145 200
+             C 150 195, 150 185, 145 180
+             C 150 175, 150 165, 145 160
+             C 150 155, 150 145, 145 140
+             C 150 135, 150 125, 145 120
+             C 150 115, 150 105, 145 100
+             C 135 80, 65 80, 55 100 Z"
           stroke="var(--color-llama-stroke)"
           strokeWidth="6"
           fill="var(--color-llama-fill)"
@@ -139,9 +139,9 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
         
         {/* Bottom Line */}
         <line 
-          x1="20" 
+          x1="15" 
           y1="200" 
-          x2="180" 
+          x2="185" 
           y2="200" 
           stroke="var(--color-llama-stroke)" 
           strokeWidth="6" 

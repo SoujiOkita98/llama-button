@@ -115,19 +115,19 @@ export default function LlamaButton({ text = "Home", onClick, className = "" }: 
           className="z-10 relative"
         />
 
-        {/* Body Main Shape (keep segmented fluff, widen belly slightly) */}
+        {/* Body Main Shape (more belly) */}
         <path
           d="M55 100 
              C 50 105, 50 115, 55 120 
-             C 48 125, 48 135, 55 140 
-             C 48 145, 48 155, 55 160 
-             C 48 165, 48 175, 55 180 
+             C 47 125, 47 135, 55 140 
+             C 47 145, 47 155, 55 160 
+             C 47 165, 47 175, 55 180 
              C 50 185, 50 195, 55 200
              L 145 200
              C 150 195, 150 185, 145 180
-             C 152 175, 152 165, 145 160
-             C 152 155, 152 145, 145 140
-             C 152 135, 152 125, 145 120
+             C 153 175, 153 165, 145 160
+             C 153 155, 153 145, 145 140
+             C 153 135, 153 125, 145 120
              C 150 115, 150 105, 145 100
              C 135 80, 65 80, 55 100 Z"
           stroke="var(--color-llama-stroke)"

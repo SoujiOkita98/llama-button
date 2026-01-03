@@ -34,13 +34,14 @@ jobs:
       - name: Install deps
         run: pnpm install
 
-      - name: Build client
-        run: pnpm -C client build
+- name: Build
+  run: pnpm build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: client/dist
+- name: Upload artifact
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: dist
+
 
   deploy:
     environment:

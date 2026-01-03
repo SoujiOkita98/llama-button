@@ -1,25 +1,39 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import LlamaButton from "@/components/LlamaButton";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[var(--color-llama-bg)] transition-colors duration-500">
+      <div className="text-center space-y-12">
+        <div className="space-y-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[var(--color-llama-stroke)] tracking-tight">
+            The Llama Button
+          </h1>
+          <p className="text-lg md:text-xl text-[var(--color-llama-stroke)]/80 max-w-md mx-auto font-medium">
+            Hover over the llama to see its ears wiggle!
+            <br />
+            <span className="text-sm opacity-70">(It's happy to see you)</span>
+          </p>
+        </div>
+
+        <div className="p-12 bg-white/40 backdrop-blur-sm rounded-[3rem] shadow-xl border border-white/50">
+          <LlamaButton 
+            text="Home" 
+            onClick={() => console.log("Llama clicked!")} 
+            className="transform transition-transform active:scale-95"
+          />
+        </div>
+
+        <div className="flex gap-8 justify-center opacity-60">
+          <LlamaButton 
+            text="About" 
+            className="scale-75 origin-top"
+          />
+          <LlamaButton 
+            text="Contact" 
+            className="scale-75 origin-top"
+          />
+        </div>
+      </div>
     </div>
   );
 }
